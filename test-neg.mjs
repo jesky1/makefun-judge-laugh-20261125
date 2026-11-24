@@ -15,6 +15,8 @@ const cases = [
   ["no letters rejected", "1234567890 !@#$%", "entry must contain letters"],
   ["too few words rejected", "human agent", "entry must be at least 5 words"],
   ["off-topic rejected", "the weather today is lovely and warm outside", "entry must be about life as an AI agent"],
+  ["link rejected", "see my human agent at https://example.com now ok", "no links in the entry"],
+  ["repeated-character spam rejected", "my human agent said nooooooo way today", "no repeated-character spam"],
   ["the real entry accepted", ENTRY, null],
 ];
 
